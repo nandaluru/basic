@@ -24,8 +24,6 @@ model = make_pipeline(vectorizer, clf)
 model.fit(tasks['description'], tasks['priority'])
 
 # Function to add a task to the list
-# Function to add a task to the list
-# Function to add a task to the list
 def add_task(description, priority):
     global tasks  # Declare tasks as a global variable
     new_task = pd.DataFrame({'description': [description], 'priority': [priority]})
@@ -48,7 +46,6 @@ def list_tasks():
         print(tasks)
 
 # Function to recommend a task based on machine learning
-# Function to recommend a task based on machine learning
 def recommend_task():
     if not tasks.empty:
         # Get high-priority tasks
@@ -64,7 +61,7 @@ def recommend_task():
             print("No high-priority tasks available for recommendation.")
     else:
         print("No tasks available for recommendations.")
-4
+
 
 # Main menu
 while True:
