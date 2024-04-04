@@ -39,9 +39,6 @@ def remove_task(description):
     tasks = tasks[tasks['description'] != description]
     save_tasks()
 
-#def remove_task(description):
-    #tasks = tasks[tasks['description'] != description]
-    #save_tasks()
 
 # Function to list all tasks
 def list_tasks():
